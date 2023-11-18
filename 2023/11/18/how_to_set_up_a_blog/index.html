@@ -5,12 +5,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hello World - 知识宝库</title>
+    <title>如何用hexo和github建立一个博客 - 知识宝库</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pr,"> 
+    <meta name="description" content="  这篇文章主要用来给自己以后查询方便。
+需要的东西  首先要有一个github账号
+  其次安装node.js，npm依赖
+  然后安装git工具
+安装git  Windows系统： 打开浏览器去,"> 
     <meta name="author" content="Lance"> 
     <link rel="alternative" href="atom.xml" title="知识宝库" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -74,7 +78,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="http://example.com">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Hello World</h3>
+        <h3 class="subtitle">如何用hexo和github建立一个博客</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -108,26 +112,28 @@
                 
                 November 18, 2023
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2023/11/18/hello-world/" title="Hello World" class="">Hello World</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2023/11/18/how_to_set_up_a_blog/" title="如何用hexo和github建立一个博客" class="">如何用hexo和github建立一个博客</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    2.2k
+                    9.7k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    2 mins.
+                    9 mins.
                 </span>
                 
                 
                 
             </p>
             
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
             
         </div>
     </div>
@@ -148,19 +154,75 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+            <p>  这篇文章主要用来给自己以后查询方便。</p>
+<h1 id="需要的东西"><a href="#需要的东西" class="headerlink" title="需要的东西"></a>需要的东西</h1><p>  首先要有一个github账号</p>
+<p>  其次安装node.js，npm依赖</p>
+<p>  然后安装git工具</p>
+<h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><p>  <strong>Windows系统：</strong> 打开浏览器去git官网下载，下载后有一个Git Bash的命令行工具，以后就用这个工具使用git，默认安装就行。</p>
+<p>  <strong>Linux：</strong> 对linux来说实在是太简单了，只需一串代码</p>
+  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install git</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>  arch系统可以用aur或者pacman安装git</p>
+  <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo pacman -S git</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>  安装好后，用git –version来查看一下版本</p>
+<h1 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h1><p>  Hexo是基于nodeJS编写的，所以需要安装一下nodeJS和里面的npm工具。</p>
+<p>  <strong>Windows系统:</strong> 去官网下载默认安装就行了。</p>
+<p>  <strong>Linux:</strong></p>
+  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install nodejs</span><br><span class="line"></span><br><span class="line">sudo apt-<span class="built_in">get</span> install npm</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>  arch系同理，使用aur或者pacman来安装</p>
+  <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman-S nodeJS</span><br><span class="line"></span><br><span class="line">sudo pacman-S <span class="built_in">npm</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>  使用npm安装模块分为本地安装和全局安装</p>
+<p>  本地安装：<code>npm install express</code> 会安装到当前项目</p>
+<p>  全局安装：<code>npm install express -g</code> 会安装到指定的目录（node_global）</p>
+<p>  我采用的是全局安装，因此需要在安装node后设置一下node_global和node_cache（node缓存文件夹）。</p>
+<p>  1、在G盘新建一个文件夹Nodejs（可以是其他名字），在此目录下创建node_global和node_cache两个目录（也可以在c盘的安装目录下新建，放在其他盘的主要原因是考虑到管理员权限的问题）。</p>
+<p>  2、设置环境变量：在Windows系统中，将路径G:\Nodejs\node_global添加到用户环境变量的path值中。添加一个系统变量NODE_PATH值设置为C:\Program Files\nodejs\node_modules。</p>
+<p>  3、打开cmd, 执行</p>
+  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm<span class="built_in"> config </span><span class="built_in">set</span><span class="built_in"> prefix </span><span class="string">&quot;G:\Nodejs\node_global&quot;</span>     # 用于设置全局安装的模块的存放路径</span><br><span class="line"></span><br><span class="line">npm<span class="built_in"> config </span><span class="built_in">set</span> cache <span class="string">&quot;G:\Nodejs\node_cache&quot;</span>       # 用于配置 npm 缓存目录</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>  4、执行 <code>npm install express -g</code></p>
+<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><p>  以上准备工作都做好后就可以使用npm安装Hexo了</p>
+  <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
+
+<p>  安装Hexo完成后，执行如下命令，Hexo将会在指定指定文件夹中新建所需要的文件。</p>
+  <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> hexo init &lt;folder&gt;</span><br><span class="line"><span class="variable">$</span> <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line"><span class="variable">$</span> npm install</span><br></pre></td></tr></table></figure>
+<p>  新建完成后，指定文件夹内会有如下内容</p>
+<ul>
+<li>node_modules: 依赖包</li>
+<li>public: 存放生成的页面</li>
+<li>scaffolds: 生成文章的一些模板</li>
+<li>source: 用来存放文章的</li>
+<li>themes: 主题</li>
+<li><strong>_config.yml: 博客的配置文件</strong></li>
+</ul>
+<p>  可以进行hexo操作生成文章以及本地运行了</p>
+  <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo -g <span class="comment"># 生成对应的html</span></span><br><span class="line"><span class="variable">$ </span>hexo -s <span class="comment"># 启动服务</span></span><br></pre></td></tr></table></figure>
+<p>  以上命令执行完以后，可以在根目录的public文件夹下看到对应的生成页面（这个文件夹的内容也是推送到github上的内容）。<code>hexo -s</code> 是开启本地预览服务，打开浏览器访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容。使用ctrl+c可以把服务关掉。</p>
+<h1 id="把github和hexo的内容关联起来"><a href="#把github和hexo的内容关联起来" class="headerlink" title="把github和hexo的内容关联起来"></a>把github和hexo的内容关联起来</h1><p>  1、在Github上创建一个和自己用户名相同的仓库，后面加.github.io，只有这样，将来要部署到github page的时候，才会被识别，也就是xxx.github.io, 其中xxx就是注册github的用户名。</p>
+<p>  2、生成ssh添加到github</p>
+  <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;yourname&quot;</span>      <span class="meta"># yourname输入的是github的用户名</span></span><br><span class="line"></span><br><span class="line">$ git config --global user.email <span class="string">&quot;youremail&quot;</span>    <span class="meta"># youremail输入github的邮箱</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>  这样github就能知道你是不是对应它的账户。接下来创建SSH，一路回车。</p>
+  <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh-keygen -t rsa -C <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure>
+<p>  操作完成后会在电脑里生成一个密钥文件夹，它的位置一般在C:\Users&lt;用户名&gt;.ssh下。id_rsa是操作者电脑的私人密钥，不能给别人看的，id_rsa.pub是公共密钥，可以随便给别人看。把这个公钥放在github上，当你链接github自己的账户时，它就会根据公钥匹配你的私钥，当能相互匹配时，才能够顺利通过git上传你的文件到github上。</p>
+<p>  在github上的setting中，找到ssh keys的设置选项，点击new ssh key把你的id_rsa.pub里面的信息赋值进去。</p>
+  <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh -T git<span class="variable">@gitub</span>.com    <span class="comment"># 检查密钥是否加入成功</span></span><br></pre></td></tr></table></figure>
+
+<p>  3、将hexo部署到github</p>
+<p>  打开站点配置文件 <strong>_config.yml</strong> ,翻到最后，修改为</p>
+  <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  </span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol"></span></span><br><span class="line"><span class="symbol">  repo:</span> https:<span class="comment">//github.com/yourgithubname/yourgithubname.github.io.git</span></span><br><span class="line"><span class="symbol"></span></span><br><span class="line"><span class="symbol">  branch:</span> master</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>  安装deploy-git, 部署的命令</p>
+  <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+
+<p>  执行命令</p>
+  <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo clean      <span class="comment"># 清除之前生成的东西</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>hexo generate   <span class="comment"># 生成静态文件，可以用hexo g缩写</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$ </span>hexo deploy     <span class="comment"># 部署文章，可以用hexo d缩写</span></span><br></pre></td></tr></table></figure>
+<p>  值得注意的是部署的时候有可能会让用户输入username和password，就是让用户重新登陆一遍github。</p>
+<p>  至此hexo就部署成功了，可以用浏览器输入<a target="_blank" rel="noopener" href="https://yourusername.github.io/%E6%B5%8F%E8%A7%88%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%BA%86%E3%80%82">https://yourusername.github.io/浏览自己的博客了。</a></p>
+<h1 id="美化博客"><a href="#美化博客" class="headerlink" title="美化博客"></a>美化博客</h1><p>  Hexo默认的界面比较丑陋，可以去hexo的官网下载自己喜欢的主题替换掉默认的主题，然后重新部署一下就行了。</p>
+<p>  我用的是Obsidian，官网下载主题后，将主题文件夹复制到博客牡蛎下的themes文件夹下即可，修改 <strong>_config.yml</strong> 文件中的 theme: landscape 改为 theme: obsidian, 重新执行hexo g生成页面，然后hexo d重新部署就完成了。</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -221,7 +283,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9C%80%E8%A6%81%E7%9A%84%E4%B8%9C%E8%A5%BF"><span class="toc-number">1.</span> <span class="toc-text">需要的东西</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85git"><span class="toc-number">2.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85nodejs"><span class="toc-number">3.</span> <span class="toc-text">安装nodejs</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="toc-number">4.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8A%8Agithub%E5%92%8Chexo%E7%9A%84%E5%86%85%E5%AE%B9%E5%85%B3%E8%81%94%E8%B5%B7%E6%9D%A5"><span class="toc-number">5.</span> <span class="toc-text">把github和hexo的内容关联起来</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2"><span class="toc-number">6.</span> <span class="toc-text">美化博客</span></a></li></ol>
                 </div>
             </div>
             
